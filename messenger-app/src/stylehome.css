@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+input{
+    text-transform: none !important;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #1e1e1e;
+}
+.messaginghome{
+    width: 80%;
+    height: 85vh;
+    max-width: 104rem;
+    max-height: 90rem;
+    border-radius: 60px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+.mainhome{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.sidebar{
+    width: 35%;
+    background-color: #fff;
+    height: 100vh;
+    box-shadow: 0px 0 6px #AFB8CF;
+    border-right: 1px solid #f3f5fd;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid rgba(248, 249, 253, 1);
+    box-shadow: -1px 0 2px #AFB8CF;
+    height: 11rem;
+}
+.navbar .navbar-side {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.navbar .navbar-side h3{
+    font-size: 1.7rem;
+}
+.navbar .navbar-side .logout{
+    all: unset;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 5px 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+} 
+.navbar .navbar-side img{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.searchdiv{
+    background-color: #F8F9FD;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin: 15px 2rem;
+    padding: 2px 4px;
+}
+.searchdiv input{
+    all:unset;
+    font-size: 1.4rem;
+    font-family: Inter;
+    width: 100%;
+    cursor: text;
+}
+.search::placeholder{
+    color: #D4D6D7;
+}
+.user{
+    display: flex;
+    padding: 10px 2.5rem;
+    margin-bottom: 30px;
+    align-items: center;
+    gap: 15px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+}
+.user:hover{
+    background-color: #D4D6D7;
+}
+.user h3{
+    font-size: 1.7rem;
+    padding-bottom: .5rem;
+    color: #000;
+}
+.user p{
+    font-size: 1.3rem;
+    color: #636363;
+}
+.user img{
+    width: 54px;
+    height: 54px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.messagearea
+{
+    background-color: rgba(248, 249, 253, 1);
+    width: 65%;
+}
+.messageareacenter{
+    background-color: rgba(248, 249, 253, 1);
+    height: calc(85% - 11rem);
+    padding: 2.4rem;
+    overflow-x: hidden;
+    }
+    .ms2{
+        scrollbar-width: none; 
+        display: flex;
+        align-items: end;
+        gap:10px;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+.ms2::-webkit-scrollbar {
+    display: none;
+  }
+::-webkit-scrollbar {
+    width: 12px; 
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.messageareaend{
+    background-color: #fff;
+    height: 15%;
+    display: flex;
+    padding: 2rem 4rem;
+    justify-content: space-between;
+    box-shadow: 5px 5px 6px #AFB8CF;
+    border-top: 1px solid #f3f5fd;
+}
+.messageareaend input{
+    all:unset;
+    background: transparent;
+    font-size: 1.8rem;
+    cursor: text;
+    width: 70%;
+    font-family: 'Inter', sans-serif;
+}
+.messageareaend img{
+    width: 6.4rem;
+}
+.navbar2{
+    background-color: rgba(248, 249, 253, 1);
+    border-bottom: 1px solid rgba(175, 184, 207, .5);
+    box-shadow: 15px 2px 9px rgba(175, 184, 207, 1) !important;
+}
+.actualmeassage{
+    padding: 16px 24px;
+    background-color: #3D64FD;
+    color: #fff;
+    max-width: 269px;
+    border-radius: 32px 32px 0 32px;
+    font-family: Inter;
+    font-size: 1.4rem;
+    height: fit-content;
+    overflow: hidden;
+}
+.actualmeassage img {
+    width: 100%;
+    object-fit: cover;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1100px) {
+    
+    .sidebar{
+        width: 100%;
+        background-color: #fff;
+        height: 100vh;
+        box-shadow: 0px 0 6px #AFB8CF;
+        border-right: 1px solid #f3f5fd;
+    }
+}
+
+@media screen and (max-width:500px) {
+    html{
+        font-size: 52.5%;
+    }
+}
+@media screen and (max-width:400px) {
+    html{
+        font-size: 42.5%;
+    }
+}

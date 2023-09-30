@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:wght@400;500;600;700&family=Urbanist:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #1e1e1e;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main .card{
+    display: flex;
+    background-color: #fff;
+    border-radius: 60px;
+    overflow: hidden;
+    color:#000;
+    width: 80%;
+    height: 85vh;
+    max-width: 104rem;
+    max-height: 90rem;
+}
+.main .card .content{
+    flex: 1 1 50%;
+    position: relative;
+}
+.main .card .content .navbar1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+}
+.main .card .content .navbar1 img{
+    width: 9.6rem;
+    
+}
+.main .card .content .navbar1 div{
+    display: flex;
+    align-items: baseline;
+    gap: .5rem;
+    font-size: 1.6rem;
+    font-family: 'Cabin', sans-serif;
+    padding:0.95rem 1.55rem;
+    border-radius: 30px;
+    border:1px solid #d2d2d2;
+    justify-content: center;
+}
+.main .card .content .navbar1 div img{
+    width: 2.4rem;
+}
+.main .card .image{
+    flex: 1 1 40%;
+}
+.main .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+
+.lowerSection{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3.7rem;
+}
+.lowerSection .headings h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4.3rem;
+    font-weight: normal;
+}
+.lowerSection .headings p{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.lowerSection .form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.lowerSection .form input[type="text"],
+.lowerSection .form input[type="email"],
+.lowerSection .form input[type="password"]
+{
+    all:unset;
+    text-align: left;
+    width: 100%;
+    padding: 0.9rem;
+    font-family: 'Cabin';
+    font-size: 16px;
+    border-radius: 3px;
+    border: 0.1rem solid #d2d2d2;
+}
+.lowerSection .form input[type="file"]
+{
+    display: none;
+}
+.lowerSection .form div,
+.lowerSection .form div input[type="checkbox"],
+.lowerSection .form div label
+{
+    font-family: 'Cabin';
+    font-size: 1.3rem;
+    word-spacing: 2px;
+    gap: 10px;
+    cursor: pointer;
+}
+.lowerSection .form button{
+    border-radius: 30px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    padding: 1.1rem;
+    border: none;
+    transition: all .5s ease-in-out;
+}
+.lowerSection .form button:hover{
+    background-color: #FEC00F;
+    color: #000;
+}
+.lowerSection .form .link{
+font-family: 'Urbanist';
+font-size: 1.3rem;
+margin-top: 1.3rem;
+}
+.lowerSection .form .link span{
+    cursor: pointer;
+    color: #FEC00F;
+}
+
+#fileedit{
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap:5px;
+    cursor: pointer;
+}
+#fileedit span{
+    font-family: 'Urbanist';
+    font-size: 1.3rem;
+}
+.error{
+    color: red;
+    text-align: left;
+    font-size: 1.4rem;
+    background-color: rgb(174, 250, 255);
+    padding: 1rem 1.5rem;
+    font-family: 'Urbanist';
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    .main .card .image{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    html{
+        font-size: 52.5%;
+    }
+}
+@media screen and (max-width:400px) {
+    html{
+        font-size: 42.5%;
+    }
+}
